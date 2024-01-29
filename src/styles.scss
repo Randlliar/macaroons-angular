@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url("./assets/fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: Gilroy-Extrabold;
+  src: url("./assets/fonts/Gilroy-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url("./assets/fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: Tavolga Free;
+  src: url("./assets/fonts/Tavolga Free.ttf");
+}
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url("./assets/fonts/Gilroy-Medium.ttf");
+}
+
+body {
+  font-family: "Tavolga Free", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.logo {
+  font-size: 18px;
+  font-family: "Tavolga Free", sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contacts {
+  font-size: 16px;
+  font-family: Gilroy-Bold, sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.btn {
+  background-image: -moz-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-family: "Gilroy-Bold", sans-serif;
+  transition: all .3s linear;
+}
+
+.btn.choice-btn {
+  width: 130px;
+  padding: 20px;
+  font-size: 16px;
+}

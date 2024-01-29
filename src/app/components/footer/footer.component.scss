@@ -1,0 +1,38 @@
+.instagram {
+  text-align: center;
+}
+
+.instagram-description {
+  font-size: 16px;
+  font-family: "Gilroy-Bold", sans-serif;
+  color: rgb(255, 255, 255);
+  margin-top: 15px;
+}
+
+.rights {
+  margin-top: 19px;
+  font-size: 12px;
+  font-family: "Gilroy-Regular", sans-serif;
+  color: rgb(227, 172, 180);
+}
+
+.rights_1 {
+  margin-top: 19px;
+  font-size: 12px;
+  font-family: "Gilroy-Regular", sans-serif;
+  color: rgb(227, 172, 180);
+  display: none;
+}
+
+.footer {
+  background: #c0707c;
+  padding: 64px 0 62px 0;
+  position: relative;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
