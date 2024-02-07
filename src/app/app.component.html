@@ -16,58 +16,9 @@
   </div>
 </section>
 
-<section class="advantages" id="advantages">
-  <div class="container">
-    <div class="advantages-block">
-      <div class="advantage-text">
-        <h2 class="advantages-block-title">Мы печём для вас вкуснейшие макаруны уже более 10 лет</h2>
-        <p class="advantages-description">
-          Все пироженки мы готовим только из натуральных и качественных продуктов, без консервантов, ароматизаторов,
-          красителей. Используем в приготовлении сливочное масло 82,5%, без дрожжей, маргарина, разрыхлителей и
-          улучшителей муки.
-        </p>
-      </div>
-      <div class="advantages-image">
-        <img src="assets/images/macaroon-adv.png" alt="Macaroon">
-      </div>
-    </div>
+<advantages></advantages>
 
-
-    <div class="advantages-items">
-      <div class="advantages-item" *ngFor="let advantage of advantages; let i = index">
-        <div class="advantages-item-image">
-          <span class="advantages-item-number">{{ i + 1 }}</span>
-        </div>
-        <h4 class="advantages-item-title">{{ advantage.title }}</h4>
-        <p class="advantages-item-description">{{ advantage.description }}</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="choice" id="choice" #macaroonsElement>
-  <div class="container">
-    <h2 class="choice-title">Выберите свой макарун</h2>
-    <div class="choice-items">
-      <div class="choice-item" *ngFor="let macaroon of macaroons">
-        <div class="choice-item-image">
-          <img src="assets/images/{{macaroon.image}}" alt="Macaroon pink">
-        </div>
-        <h4 class="choice-item-title">{{ macaroon.title }}</h4>
-        <div class="choice-item-content">
-          <div class="choice-title-price">
-            <div class="price-amount">{{ macaroon.pieces }} шт.</div>
-            <div class="price-sum">{{ macaroon.amount }} руб.</div>
-          </div>
-          <button class="btn choice-btn" (click)="choiceMacaroon(macaroon, orderElement)">
-            Заказать
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+<macaroons></macaroons>
 <section class="order" id="order" #orderElement>
   <div class="container">
     <img src="assets/images/strawberry1.png" alt="Strawberry" class="strawberry">
@@ -101,8 +52,10 @@
 <div class="present" *ngIf="showPresent">
   <div class="popup">
     <div class="triangle"></div>
-    <span>Оформите заказ
-        и получите подарок!</span>
+    <span>{{cartService.amount}}</span>
   </div>
-  <div class="present-block"><img src="assets/images/present.png" alt="present"></div>
+  <div class="present-block">
+    <img src="assets/images/cart.png" alt="present">
+    <div class="present-count">{{cartService.count}}</div>
+  </div>
 </div>
