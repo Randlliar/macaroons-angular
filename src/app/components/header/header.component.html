@@ -47,8 +47,8 @@
       </ul>
 
     </nav>
-    <a href="tel:+375293689868" class="contacts">
-      {{phone}}
+    <a href="tel:{{phone | phoneNumber}}" class="contacts">
+      {{phone | phoneNumber}}
     </a>
   </div>
 </header>

@@ -13,6 +13,6 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  protected readonly phone = phone;
-  protected readonly instagram = instagram;
+  protected readonly phone: string = phone;
+  protected readonly instagram: string = instagram;
 }

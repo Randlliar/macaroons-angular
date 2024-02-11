@@ -2,21 +2,7 @@
   <div class="container">
     <h2 class="choice-title">Выберите свой макарун</h2>
     <div class="choice-items">
-      <div class="choice-item" *ngFor="let macaroon of macaroons">
-        <div class="choice-item-image">
-          <img src="assets/images/{{macaroon.image}}" alt="Macaroon pink">
-        </div>
-        <h4 class="choice-item-title">{{ macaroon.title }}</h4>
-        <div class="choice-item-content">
-          <div class="choice-title-price">
-            <div class="price-amount">{{ macaroon.pieces }} шт.</div>
-            <div class="price-sum">{{ macaroon.amount }} руб.</div>
-          </div>
-          <button class="btn choice-btn" (click)="choiceMacaroon(macaroon, orderElement)">
-            Заказать
-          </button>
-        </div>
-      </div>
+      <macaroon-card *ngFor="let macaroon of macaroons" [macaroon]="macaroon" (order)="handleOrder($event)"></macaroon-card>
     </div>
   </div>
 </section>

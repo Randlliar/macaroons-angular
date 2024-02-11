@@ -8,6 +8,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import {FormsModule} from "@angular/forms";
 import { AdvantagesComponent } from './components/advantages/advantages.component';
 import { MacaroonsComponent } from './components/macaroons/macaroons.component';
+import { ButtonsEffectsDirective } from './derectives/buttons-effects.directive';
+import { MacaroonCardComponent } from './components/macaroon-card/macaroon-card.component';
+import { AdvantagesDescriptionPipe } from './pipes/advantages-description.pipe';
+import { PhoneNumberPipe } from './pipes/phone-number.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,10 @@ import { MacaroonsComponent } from './components/macaroons/macaroons.component';
     FooterComponent,
     AdvantagesComponent,
     MacaroonsComponent,
+    ButtonsEffectsDirective,
+    MacaroonCardComponent,
+    AdvantagesDescriptionPipe,
+    PhoneNumberPipe,
   ],
   imports: [
     BrowserModule,

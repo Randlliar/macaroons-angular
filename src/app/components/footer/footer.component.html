@@ -15,8 +15,8 @@
       </a>
       <div class="instagram-description">Мы в Instagram</div>
     </div>
-    <a href="tel:{{phone}}" class="contacts">
-      {{ phone }}
+    <a href="tel:{{phone | phoneNumber}}" class="contacts">
+      {{ phone  | phoneNumber}}
     </a>
     <div class="rights_1">Все права защищены, 2020</div>
   </div>

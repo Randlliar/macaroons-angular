@@ -1,0 +1,40 @@
+.choice-item {
+  border-radius: 20px;
+  width: 259px;
+  border: 2px solid white;
+  padding: 109px 21px 31px 21px;
+  position: relative;
+
+}
+
+
+.choice-item-image {
+  position: absolute;
+  top: -60px;
+  right: 30px;
+  transition: all .3s linear;
+}
+
+.choice-item-image img {
+  width: 100%;
+}
+
+.choice-item-title {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-weight: normal;
+}
+
+.choice-item-content {
+  display: flex;
+  margin-top: 26px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.choice-title-price {
+  font-size: 15px;
+  font-family: "Gilroy-Regular", sans-serif;
+  color: rgb(255, 255, 255);
+}

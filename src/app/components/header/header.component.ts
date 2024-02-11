@@ -8,5 +8,5 @@ import {phone} from "../../constans/contacts";
 })
 export class HeaderComponent {
 
-  protected readonly phone = phone;
+  protected readonly phone: string = phone;
 }

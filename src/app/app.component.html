@@ -6,7 +6,7 @@
         пироженками
         Macaroon!
       </p>
-      <button class="btn main-btn" (click)="scrollTo(macaroonsElement)">Выбрать макарун</button>
+<!--      <button class="btn main-btn" (click)="scrollTo(macaroonsElement)">Выбрать макарун</button>-->
     </div>
     <div class="main-image-inner">
       <div class="main-image">
@@ -42,7 +42,7 @@
         <div class="order-contacts-title">Заполните данные для заказа</div>
         <input type="text" class="order-input" placeholder="Ваше имя" required>
         <input type="tel" class="order-input" placeholder="+375 (__) ___ - __ - __" required>
-        <button class="btn order-btn">Оформить заказ</button>
+        <button class="btn order-btn" appButtonsEffects>Оформить заказ</button>
       </form>
     </div>
   </div>
@@ -52,7 +52,7 @@
 <div class="present" *ngIf="showPresent">
   <div class="popup">
     <div class="triangle"></div>
-    <span>{{cartService.amount}}</span>
+    <span>{{cartService.finalPrice | currency: 'Rub' : 'руб'}}</span>
   </div>
   <div class="present-block">
     <img src="assets/images/cart.png" alt="present">

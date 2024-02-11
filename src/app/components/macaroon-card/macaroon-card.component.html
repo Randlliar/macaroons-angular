@@ -1,0 +1,15 @@
+<div class="choice-item">
+  <div class="choice-item-image">
+    <img src="assets/images/{{macaroon.image}}" alt="Macaroon pink">
+  </div>
+  <h4 class="choice-item-title">{{ macaroon.title }}</h4>
+  <div class="choice-item-content">
+    <div class="choice-title-price">
+      <div class="price-amount">{{ macaroon.pieces }} шт.</div>
+      <div class="price-sum">{{ macaroon.amount | currency: 'Rub' : 'руб'}}</div>
+    </div>
+    <button class="btn choice-btn" appButtonsEffects (click)="handleOrder()">
+      Заказать
+    </button>
+  </div>
+</div>

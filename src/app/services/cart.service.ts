@@ -5,8 +5,5 @@ import { Injectable } from '@angular/core';
 })
 export class CartService {
 count: number = 0;
-amount: number = 0;
-
-  constructor() { }
-
+finalPrice: number = 0;
 }
